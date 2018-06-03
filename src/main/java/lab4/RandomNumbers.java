@@ -1,9 +1,7 @@
 package lab4;
 
 public class RandomNumbers {
-    public RandomNumbers() {
-    }
-
+    
     public void RandomNumbers() {
         int from;
         int to;
