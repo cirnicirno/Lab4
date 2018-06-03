@@ -1,8 +1,6 @@
 package lab4;
 
 public class RandomNumbers {
-    public RandomNumbers() {
-    }
 
     public void RandomNumbers() {
         int from;
@@ -13,13 +11,13 @@ public class RandomNumbers {
             if (scanner.isIntNumber()) {
                 System.out.print("Введите второе целое число: ");
                 from = scanner.getNumber();
-                if (scanner.isIntNumber()) {
+                if (scanner.isIntNumber() && scanner.getNumber() >= from) {
                     to = scanner.getNumber();
                     break;
                 }
             }
 
-            System.out.println("Извините, вы ввели не целое число!");
+            System.out.println("Что-то пошло не так, повторите ввод!");
         }
         ExportArray exportArray = new ExportArray();
         exportArray.print(from, to);
