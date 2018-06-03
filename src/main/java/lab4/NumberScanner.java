@@ -3,6 +3,7 @@ package lab4;
 import java.util.Scanner;
 
 public class NumberScanner {
+
     private int number;
     private Scanner in;
     private String line;

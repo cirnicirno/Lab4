@@ -2,7 +2,9 @@ package lab4;
 
 public class RandomNumbers {
 
-    public void RandomNumbers() {
+    //Где конструктор?
+
+    public void RandomNumbers() {//Методы называются с маленькой буквы!
         int from;
         int to;
         NumberScanner scanner = new NumberScanner();
@@ -20,6 +22,7 @@ public class RandomNumbers {
             System.out.println("Что-то пошло не так, повторите ввод!");
         }
         ExportArray exportArray = new ExportArray();
+        //Метод принт = создание + печать, по моему это не правильно, не думаешь?
         exportArray.print(from, to);
 
 
